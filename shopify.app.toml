@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "marketing"
+client_id = "efdcaa31c727bf83cfabf0b36034b270"
+application_url = "https://blogging-asks-alabama-ministry.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,read_customers,write_customers"
+
+[auth]
+redirect_urls = [
+  "https://blogging-asks-alabama-ministry.trycloudflare.com/auth/callback",
+  "https://blogging-asks-alabama-ministry.trycloudflare.com/auth/shopify/callback",
+  "https://blogging-asks-alabama-ministry.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "oroa-development.myshopify.com"
